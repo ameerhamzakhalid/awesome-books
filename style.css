@@ -1,6 +1,28 @@
+html {
+  font-family: 'helvetica neue', Arial, Helvetica, sans-serif;
+}
+
 body {
   padding: 1em;
   margin: 0;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: 2px solid #000;
+}
+
+button {
+  margin-left: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 ul {
@@ -11,4 +33,37 @@ ul {
 li {
   margin: 0;
   margin-bottom: 1rem;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 2px solid #000;
+
+}
+
+td tbody {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+td {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #d3d3d3;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.line {
+  height: 2px;
+  width: 50%;
+  background-color: #000;
 }
