@@ -14,6 +14,7 @@ title.addEventListener('change', () => {
 author.addEventListener('change', () => {
   inputBook.author = author.value;
 });
+
 const populateFields = () => {
   localStorage.setItem('savedBooks', JSON.stringify(books));
 };
@@ -37,30 +38,55 @@ const Book = class {
   };
 
   static displayBooks = () => {
-    listBooks.innerHTML = '';
+    listBooks.innerHTML = `
+        <table class="btable">
+        </table>
+    `;
+
+    const btable = document.querySelector('.btable');
+
+    if (books.length === 0) {
+      btable.style.display = 'none';
+    }
+    // Create the table body only once
+    const body = btable.appendChild(document.createElement('tbody'));
+    body.setAttribute('class', 'bbody');
+
     books.map((book) => {
-      const bookDiv = document.createElement('tr');
-      const elementBook = document.createElement('td');
+      // Create table rows every time a book is added
+      const tr = document.createElement('tr');
+      const td = document.createElement('td');
       const deleteBtn = document.createElement('button');
+
+      // Display the remove button
       deleteBtn.textContent = 'Remove';
-      elementBook.textContent = `"${book.title}" by ${book.author}`;
-      bookDiv.classList.add('book-container');
-      bookDiv.appendChild(elementBook);
-      bookDiv.appendChild(deleteBtn);
-      listBooks.appendChild(bookDiv);
+
+      // Populate the data
+      td.textContent = `"${book.title}" by ${book.author}`;
+      td.appendChild(deleteBtn);
+
+      // Create separate rows for each book
+      tr.appendChild(td);
+
+      // Append the rows inside the body
+      const bBody = document.querySelector('.bbody');
+      const uniqueBook = bBody.appendChild(tr);
 
       deleteBtn.addEventListener('click', () => {
         this.removeBook(book);
-        listBooks.removeChild(bookDiv);
+        bBody.removeChild(uniqueBook);
       });
+
       return listBooks;
     });
   };
 };
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   Book.addBook(new Book(inputBook.title, inputBook.author));
   form.submit();
 });
+
 Book.displayBooks();
 populateFields();
