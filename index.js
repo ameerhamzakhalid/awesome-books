@@ -9,11 +9,10 @@ const contact = document.querySelector('.contact');
 const inputBook = {};
 let books = new Array([]);
 
-const inputBook = {};
-let books = new Array([]);
 if (localStorage.savedBooks) {
   books = JSON.parse(localStorage.getItem('savedBooks'));
 }
+
 navList.addEventListener('click', () => {
   allBooks.classList.remove('hidden');
   addBook.classList.add('hidden');
@@ -31,7 +30,8 @@ navContact.addEventListener('click', () => {
   allBooks.classList.add('hidden');
   addBook.classList.add('hidden');
 });
-stener('change', () => {
+
+title.addEventListener('change', () => {
   inputBook.title = title.value;
 });
 
