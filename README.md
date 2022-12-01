@@ -1,59 +1,213 @@
----
-layout: default
----
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# Portfolio Microverse
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
 
-> Professional Portfolio using HTML, CSS, Javascript
+Modify this file to match your project and remove sections that don't apply.
 
-### Check out in this [link](https://github.com/ameerhamzakhalid/awesome-books)
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
-## Built With
+After you're finished please remove all the comments and instructions!
+-->
 
--HTML
--CSS
--Javascript
+<!-- TABLE OF CONTENTS -->
 
-## Live Demo (if available)
+# 📗 Table of Contents
 
-[Live Demo Link](https://ameerhamzakhalid.github.io/portfolio-ameer-hamza/)
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-## Getting Started
+<!-- PROJECT DESCRIPTION -->
 
+# 📖 [your_project_name] <a name="about-project"></a>
+A simple site to keep a record of awesome books.
 
-For copying and running follow the steps below.
-- Clone the repository by excecuting the git clone ```https://github.com/ameerhamzakhalid/awesome-books``` from the terminal.
+## 🛠 Built With <a name="built-with"></a>
+- HTML
+- CSS
+- JavaScript
+
+### Tech Stack <a name="tech-stack"></a>
+
+> This project utilizes the following stack
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://html.com">HTML</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://javascript.com">JavaScript</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Frontend</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">CSS</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **Add a book**
+- **persistent Books record**
+- **Remove a book from the list**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Coming Soon](#)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+```sh
+git clone [this repo]
+```
+
 ### Prerequisites
-  - Git installed
 
+In order to run this project you need:
 
-  - open index.html
+```sh
+open index.html
+```
+### Deployment
 
-## Authors
+You can deploy this project using:
 
-👤 **Ameer Hamza**
+> Coming soon
 
-- GitHub: [@ameerhamzakhalid](https://github.com/ameerhamzakhalid)
-- Twitter: [@twitterhandle](https://twitter.com/ameeerhamza1997)
-- LinkedIn: [Ameer Hamza](https://www.linkedin.com/in/choudhary-hamza-37b17a141/)
+<!--
+Example:
+
+```sh
+
+```
+ -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
 
 👤 **Jared Atandi**
 
-- GitHub: [@github](https://github.com/jaredatandi)
-- Twitter: [@twitter](https://twitter.com/@one_good_man_)
+- GitHub: [@githubhandle](https://github.com/jaredatandi)
+- Twitter: [@twitterhandle](https://twitter.com/one_good_man)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/engineerjaredatandi)
 
-## 🤝 Contributing
+👤 **Hamza**
 
-Contributions, issues, and feature requests are welcomed!
+- GitHub: [@githubhandle](https://github.com/)
+- Twitter: [@twitterhandle](https://twitter.com/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Feel free to check the [issues page](https://github.com/ameerhamzakhalid/portfolio-ameer-hamza/issues).
+<!-- FUTURE FEATURES -->
 
-## Show your support
+## 🔭 Future Features <a name="future-features"></a>
 
-Give a ⭐️ if you like this project!
+- [ ] **Displaying a book preview**
+- [ ] **Links to the books**
+- [ ] **Better page design**
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This project is [MIT](./MIT.md) licensed
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> Write a message to encourage readers to support your project
+
+If you like this project...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse for the inspiration and the wireframe design
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+> Add at least 2 questions new developers would ask when they decide to use your project.
+
+- **[Question_1]**
+
+  - [Answer_1]
+
+- **[Question_2]**
+
+  - [Answer_2]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+

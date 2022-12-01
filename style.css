@@ -1,27 +1,18 @@
-html {
-  font-family: 'helvetica neue', Arial, Helvetica, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+html,
 body {
-  padding: 1em;
-  margin: 0;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-input {
-  border: 2px solid #000;
-}
-
-button {
-  margin-left: 1rem;
-}
-
-button:hover {
-  cursor: pointer;
+  height: 100vh;
+  width: 100%;
+  padding: 0.2rem;
+  margin: 0;
+  font-family: 'Quicksand', 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  color: #333;
 }
 
 ul {
@@ -29,39 +20,139 @@ ul {
   padding: 0;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px rgb(8, 33, 114) solid;
+  padding: 10px;
+  max-width: 40rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.nav-ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  padding: 0.2rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  color: #7af135;
+}
+
 li {
+  display: flex;
+  justify-content: flex-end;
   margin: 0;
   margin-bottom: 1rem;
 }
 
-table {
-  table-layout: fixed;
-  border-collapse: collapse;
-  border: 2px solid #000;
+.contact-details {
+  list-style: circle;
+  margin-top: 2rem;
 }
 
-td tbody {
-  text-align: center;
+span {
+  display: block;
+}
+
+button {
+  background: #0b912c;
+  color: #fff;
+  font-weight: bold;
   letter-spacing: 1px;
+  padding: 0.4rem;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-td {
+input {
+  padding: 0.3rem;
+  width: 100%;
+  border: 0.125rem rgb(15, 23, 177) solid;
+  border-radius: 0.25rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.all-books,
+.add-book {
+  display: block;
+  width: 90%;
+  max-width: 32rem;
+}
+
+.list-books {
+  border: 0.125rem solid #333;
+  border-radius: 0.25rem;
+  max-width: 32rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.book-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  gap: 10rem;
+  padding: 0.5rem;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: #d3d3d3;
+.title-list-books,
+.title-form-add,
+.title-contact {
+  text-align: center;
+  color: #220f92;
 }
 
-tbody tr:nth-child(even) {
-  background-color: #fff;
+.form-input {
+  margin: 0 auto;
+  max-width: 26rem;
+  box-sizing: border-box;
 }
 
-.line {
-  height: 2px;
-  width: 50%;
-  background-color: #000;
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 32rem;
+}
+
+.contact > p {
+  padding: 0;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.title-contact {
+  margin-bottom: 3rem;
+}
+
+footer {
+  display: flex;
+  align-self: flex-end;
+  border: 2px rgb(9, 51, 167) solid;
+  padding: 10px;
+  max-width: 40rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.hidden {
+  display: none;
 }

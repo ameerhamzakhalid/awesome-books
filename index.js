@@ -1,12 +1,36 @@
 const listBooks = document.querySelector('.list-books');
 const form = document.querySelector('.form-input');
 const [title, author] = form.elements;
+const [navList, navAdd, navContact] = document.querySelectorAll('.list-item');
+const allBooks = document.querySelector('.all-books');
+const addBook = document.querySelector('.add-book');
+const contact = document.querySelector('.contact');
 
 const inputBook = {};
 let books = new Array([]);
+
 if (localStorage.savedBooks) {
   books = JSON.parse(localStorage.getItem('savedBooks'));
 }
+
+navList.addEventListener('click', () => {
+  allBooks.classList.remove('hidden');
+  addBook.classList.add('hidden');
+  contact.classList.add('hidden');
+});
+
+navAdd.addEventListener('click', () => {
+  addBook.classList.remove('hidden');
+  allBooks.classList.add('hidden');
+  contact.classList.add('hidden');
+});
+
+navContact.addEventListener('click', () => {
+  contact.classList.remove('hidden');
+  allBooks.classList.add('hidden');
+  addBook.classList.add('hidden');
+});
+
 title.addEventListener('change', () => {
   inputBook.title = title.value;
 });
@@ -38,45 +62,25 @@ const Book = class {
   };
 
   static displayBooks = () => {
-    listBooks.innerHTML = `
-        <table class="btable">
-        </table>
-    `;
-
-    const btable = document.querySelector('.btable');
-
-    if (books.length === 0) {
-      btable.style.display = 'none';
-    }
-    // Create the table body only once
-    const body = btable.appendChild(document.createElement('tbody'));
-    body.setAttribute('class', 'bbody');
-
+    listBooks.innerHTML = '';
     books.map((book) => {
-      // Create table rows every time a book is added
-      const tr = document.createElement('tr');
-      const td = document.createElement('td');
+      const bookDiv = document.createElement('tr');
+      const elementBook = document.createElement('td');
       const deleteBtn = document.createElement('button');
-
-      // Display the remove button
       deleteBtn.textContent = 'Remove';
 
-      // Populate the data
-      td.textContent = `"${book.title}" by ${book.author}`;
-      td.appendChild(deleteBtn);
+      elementBook.textContent = `"${book.title}" by ${book.author}`;
 
-      // Create separate rows for each book
-      tr.appendChild(td);
+      bookDiv.classList.add('book-container');
+      bookDiv.appendChild(elementBook);
+      bookDiv.appendChild(deleteBtn);
 
-      // Append the rows inside the body
-      const bBody = document.querySelector('.bbody');
-      const uniqueBook = bBody.appendChild(tr);
+      listBooks.appendChild(bookDiv);
 
       deleteBtn.addEventListener('click', () => {
         this.removeBook(book);
-        bBody.removeChild(uniqueBook);
+        listBooks.removeChild(bookDiv);
       });
-
       return listBooks;
     });
   };
