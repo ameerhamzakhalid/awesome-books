@@ -24,7 +24,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px #333 solid;
+  border: 2px rgb(8, 33, 114) solid;
   padding: 10px;
   max-width: 40rem;
   margin: 0 auto;
@@ -44,7 +44,7 @@ nav {
 }
 
 .list-item:hover {
-  color: #f1356d;
+  color: #7af135;
 }
 
 li {
@@ -64,7 +64,7 @@ span {
 }
 
 button {
-  background: #f1356d;
+  background: #0b912c;
   color: #fff;
   font-weight: bold;
   letter-spacing: 1px;
@@ -77,7 +77,7 @@ button {
 input {
   padding: 0.3rem;
   width: 100%;
-  border: 0.125rem #333 solid;
+  border: 0.125rem rgb(15, 23, 177) solid;
   border-radius: 0.25rem;
 }
 
@@ -115,7 +115,7 @@ tr:nth-child(even) {
 .title-form-add,
 .title-contact {
   text-align: center;
-  color: #f1356d;
+  color: #220f92;
 }
 
 .form-input {
@@ -146,7 +146,7 @@ tr:nth-child(even) {
 footer {
   display: flex;
   align-self: flex-end;
-  border: 2px #333 solid;
+  border: 2px rgb(9, 51, 167) solid;
   padding: 10px;
   max-width: 40rem;
   margin: 0 auto;
