@@ -6,7 +6,6 @@ body {
   padding: 1em;
   margin: 0;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +38,6 @@ table {
   table-layout: fixed;
   border-collapse: collapse;
   border: 2px solid #000;
-
 }
 
 td tbody {
